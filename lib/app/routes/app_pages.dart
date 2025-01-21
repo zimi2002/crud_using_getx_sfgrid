@@ -2,8 +2,6 @@ import 'package:get/get.dart';
 
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
-import '../modules/storage_crud_operation/bindings/storage_crud_operation_binding.dart';
-import '../modules/storage_crud_operation/views/storage_crud_operation_view.dart';
 
 part 'app_routes.dart';
 
@@ -18,10 +16,10 @@ class AppPages {
       page: () => HomeView(),
       binding: HomeBinding(),
     ),
-    GetPage(
-      name: _Paths.STORAGE_CRUD_OPERATION,
-      page: () => const StorageCrudOperationView(),
-      binding: StorageCrudOperationBinding(),
-    ),
+    // GetPage(
+    //   name: _Paths.STORAGE_CRUD_OPERATION,
+    //   page: () => const StorageCrudOperationView(),
+    //   binding: StorageCrudOperationBinding(),
+    // ),
   ];
 }
